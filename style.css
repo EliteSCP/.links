@@ -1,0 +1,384 @@
+*{
+  padding:0;
+  margin:0;
+  outline: none;
+}
+:root{
+  --blue: #55B1F5;
+  --blueHover: #67b6f0;
+  --blueActive: #42a9f5;
+  --white: white;
+  --black: #19141E;
+  --gray:#9c9c9c;
+
+  --ombra: 0px 0px 20px 0px rgba(0,0,0,0.4);
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+/*OGGETTI DEFAULT*/
+.button{
+  background-color:#1272ae;
+  border-radius: 10px;
+  box-shadow: var(--ombra);
+  margin:20px 0;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size:17px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+}
+.button:hover{
+  transform: scale(1.01);
+  background-color: var(--blueHover);
+}
+.button:active{
+  transform: scale(0.99);
+  background-color: var(--blueActive);
+}
+.titleSezione{
+  width:fit-content;
+  height:70px;
+  background-color: var(--white);
+  box-shadow: var(--ombra);
+  font-family: 'Noto Sans', sans-serif;
+  color:var(--black);
+  font-weight: bold;
+  font-size:45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  padding:2px 20px;
+  margin: 0 auto;
+  position: relative;
+  top:-20px;
+}
+
+#background{
+  position: absolute;
+  z-index: -1;
+  top:0;
+  right:0;
+}
+
+/*NAVBAR*/
+#navBar{
+  width:100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#logo{
+  width:50px;
+  position: absolute;
+  left:20px;
+}
+#menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right:20px;
+}
+.menuTab{
+  margin:0 7px;
+  font-size:16px;
+  color:#008080;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.menuTab:hover{
+  color:var(--gray);
+}
+#selectedMenuTab{
+  font-size:18px;
+  color:white
+}
+
+/*INTESTAZIONE*/
+#intestazione{
+  position: absolute;
+  z-index: 0;
+  top:360px;
+  left:130px;
+}
+#title{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color:#19141E;
+  font-size:65px;
+  line-height: 100%;
+}
+#subtitle{
+  font-family: 'Open Sans', sans-serif;
+  color:#1272ae;
+  font-size:25px;
+}
+#intestazione .button{
+  width:280px;
+  height:50px;
+}
+
+/*SCP:SL*/
+#background-scpsl{
+  position: absolute;
+  z-index: -1;
+  top:0;
+  right:0;
+}
+#intestazione-scpsl{
+  position: absolute;
+  z-index: 0;
+  top:400px;
+  left:130px;
+}
+#title-scpsl{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color:#c50000;
+  font-size:28px;
+  line-height: 100%;
+  margin-top: -375px;
+}
+#subtitle-scpsl{
+  font-family: 'Open Sans', sans-serif;
+  color:#1272ae;
+  font-size:25px;
+}
+
+/*SCP:SL.InfoGioco*/
+#classes{
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+#background-scpsl-infogioco{
+  position: absolute;
+  z-index: -1;
+  top:0;
+  right:0;
+}
+#intestazione-scpsl-infogioco{
+  position: absolute;
+  z-index: 0;
+  top:400px;
+  left:130px;
+}
+#title-scpsl-infogioco{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color:#c50000;
+  font-size:28px;
+  line-height: 100%;
+  margin-top: -375px;
+}
+#subtitle-scpsl-infogioco{
+  font-family: 'Open Sans', sans-serif;
+  color:#ffffff;
+  font-size:25px;
+}
+#intestazione-scpsl-infoplugin{
+  position: absolute;
+  z-index: 0;
+  top:400px;
+  left:130px;
+}
+#title-scpsl-infoplugin{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color:#c50000;
+  font-size:28px;
+  line-height: 100%;
+  margin-top: -375px;
+}
+#subtitle-scpsl-infoplugin{
+  font-family: 'Open Sans', sans-serif;
+  color:#ffffff;
+  font-size:25px;
+}
+#clicks{
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#intestazione-plugin{
+  position: absolute;
+  z-index: 0;
+  left:200px;
+}
+#title-plugin{
+  font-family: monospace;
+  font-weight: bold;
+  font-size:28px;
+  line-height: 100%;
+  margin-top: 12%;
+  color: #008080;
+}
+#subtitle-plugin{
+  font-family: 'Open Sans', sans-serif;
+  color:#9fafb1;
+  font-size:20px;
+}
+
+/*InfoGioco.Humans*/
+#intestazione-humans{
+  position: absolute;
+  z-index: 0;
+  left:130px;
+}
+#title-humans{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size:28px;
+  line-height: 100%;
+  margin-top: 6%;
+}
+#subtitle-humans{
+  font-family: 'Open Sans', sans-serif;
+  color:#9fafb1;
+  font-size:20px;
+}
+
+/*InfoGioco.SCP*/
+#intestazione-scp{
+  position: absolute;
+  z-index: 0;
+  left:130px;
+}
+#title-scp{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size:28px;
+  line-height: 100%;
+  margin-top: 6%;
+}
+#subtitle-scp{
+  font-family: 'Open Sans', sans-serif;
+  color:#9fafb1;
+  font-size:20px;
+}
+
+/*STAFF*/
+#background-staff{
+  position: absolute;
+  z-index: -1;
+  top:0;
+  right:0;
+}
+#intestazione-staff{
+  position: absolute;
+  z-index: 0;
+  top:400px;
+  left:130px;
+}
+#title-staff{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color:#c50000;
+  font-size:28px;
+  line-height: 100%;
+  margin-top: -375px;
+}
+#subtitle-staff{
+  font-family: 'Open Sans', sans-serif;
+  color:#1272ae;
+  font-size:25px;
+}
+
+#intestazione-staff2{
+  position: absolute;
+  z-index: 0;
+  left:130px;
+}
+#title-staff2{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size:28px;
+  line-height: 100%;
+  margin-top: 8%;
+  color: #008080;
+}
+#subtitle-staff2{
+  font-family: 'Open Sans', sans-serif;
+  color:#9fafb1;
+  font-size:20px;
+}
+
+.danger {
+  background-color: #ffdddd;
+  border-left: 6px solid #f44336;
+  margin-bottom: 15px;
+  padding: 4px 12px;
+}
+
+.badge {
+  background-color: #008080;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.soon {
+  background-color: #ffffff;
+  color: black;
+  padding: 1px 3px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+body{
+  /*overflow: hidden;*/
+  user-select: none;
+}
+
+.container {
+  position: relative;
+}
+.topright {
+  position: absolute;
+  top: -45px;
+  right: 10px;
+  font-size: 18px;
+  width: 250px;
+  padding: 2px;
+  border: 3px solid gray;
+  margin: 0;
+  height: 297px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+#ClassDText{
+  background-color: #727472;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-family: monospace;
+}
+hr.solid {
+  border-top: 2px solid #bbb;
+}
+
+#AssistanceScp079{
+  color:#ffffff
+}
+
+.hide {
+  display: none;
+  font-size: 15px;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: #9fafb1;
+}
