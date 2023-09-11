@@ -1,0 +1,20 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+h1 {
+  line-height: 100%;
+  margin-top: 3%;
+  color: midnightblue;
+  text-align: left;
+  margin-left: 2%;
+}
+p {
+  color: black;
+  text-align: left;
+  font-size: large;
+  margin-left: 2%;
+}
+a {
+  margin-top: 3%;
+  color: red;
+}

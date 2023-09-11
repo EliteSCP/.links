@@ -1,0 +1,13 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+h1 {
+  line-height: 100%;
+  margin-top: 15%;
+  color: midnightblue;
+  text-align: center;
+}
+p {
+  color: #008080;
+  text-align: center;
+}
